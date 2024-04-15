@@ -1,5 +1,5 @@
 import { db } from "@/db/db";
-import { redirect } from "next/navigation";
+import {  redirect } from "next/navigation";
 const CreateSnippetPage = () => {
   const createSnippet = async (formData: FormData) => {
     // This is a server action
