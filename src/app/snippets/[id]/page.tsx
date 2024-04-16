@@ -41,3 +41,12 @@ const handleDelete = actions.deleteSnippet.bind(null, snippet.id)
 };
 
 export default SnippetShowPage;
+
+export async function generateStaticParams() {
+  const snippets = await db.snippet.findMany();
+  return snippets.map(snippet =>{
+    return {
+      id: snippet.id.toString(),
+    }
+  })
+}
