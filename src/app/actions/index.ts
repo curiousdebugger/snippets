@@ -50,7 +50,7 @@ export async function createSnippet(
       };
     } else {
       return {
-        messasge: "Something went wrong.",
+        message: "Something went wrong.",
       };
     }
   }

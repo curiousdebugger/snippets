@@ -2,9 +2,7 @@
 import { useFormState } from "react-dom";
 import * as actions from "@/app/actions";
 const CreateSnippetPage = () => {
-  const [formState, action] = useFormState(actions.createSnippet, {
-    message: "",
-  });
+  const [formState, action] = useFormState(actions.createSnippet, {message: ""});
   return (
     <form action={action}>
       <h3 className="font-bold m-3">Create a Snippet</h3>
